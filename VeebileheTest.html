@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #b89475;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Style the navigation menu */
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: #1e847f;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #ecc19c;
+  padding: 10px;
+}
+
+/* Style the footer */
+footer {
+  background-color: #b89475;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  font-size: 12px;
+}
+
+a:link, a:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+}
+
+a:hover, a:active {
+  background-color: red;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+<body>
+<header>
+  <h2>Tunniplaan</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="https://tammegymnaasium.edupage.org/timetable/view.php?num=38&class=-28">12 IT</a></li>
+      <li><a href="https://tammegymnaasium.edupage.org/timetable/view.php?num=38&class=-25">12 LO</a></li>
+      <li><a href="https://tammegymnaasium.edupage.org/timetable/view.php?num=38&class=-27">12 TE</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>Kevade</h1>
+    <p>Kui Arno isaga koolimajja jõudis, olid tunnid juba alanud.</p>
+    <p>"Kevade" on 1969. aastal valminud Tallinnfilmi mängufilm, mis põhineb Oskar Lutsu jutustusel "Kevade".</p>
+  </article>
+</section>
+
+<footer>
+  <p>Tiidukid ® | 2021</p>
+</footer>
+
+</body>
+</html>
